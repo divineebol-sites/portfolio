@@ -69,7 +69,10 @@
   .proj{display:grid;grid-template-columns:1fr;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
   .proj:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(31,26,28,.45)}
   @media(min-width:760px){.proj{grid-template-columns:.95fr 1.05fr}}
-  .proj img{aspect-ratio:16/10;object-fit:cover;height:100%}
+  .proj img{aspect-ratio:16/10;object-fit:cover;height:auto}
+  /* Stretch the photo to the card height only in the 2-column desktop layout; on phones height:100% made the photo cover the text (iOS Safari) */
+  @media(min-width:760px){.proj img{height:100%}}
+  .proj .b{position:relative;background:#fff}
   .proj .b{padding:20px 22px;display:flex;flex-direction:column;gap:6px}
   .num{font-family:var(--serif);font-size:15px;color:var(--gold);font-weight:600}
   .proj h3{font-family:var(--serif);font-weight:600;font-size:clamp(25px,6vw,31px);line-height:1.1}
