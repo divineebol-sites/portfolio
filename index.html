@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Divine Lery Rose Ebol | SMDC Manager · Condos in Metro Manila, Las Piñas and Cagayan de Oro</title>
+<meta name="description" content="Divine Lery Rose Ebol, SMDC Manager. Browse SMDC condos by the Bay and the airport, beside SM Southmall in Las Piñas, and in Uptown Cagayan de Oro. Book a private presentation.">
+<meta property="og:title" content="Divine Lery Rose Ebol · SMDC Manager">
+<meta property="og:description" content="SMDC condos in Metro Manila, Las Piñas and Cagayan de Oro. Pick a project and book a private presentation.">
+<meta property="og:image" content="https://divineebol.com/images/og-divine-v2.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://divineebol.com/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://divineebol.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23B4576A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23ffffff'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* Divine's personal home page: blush, rose and charcoal, set apart from the three project sites */
+  :root{
+    --ink:#1F1A1C;       /* charcoal text */
+    --rose:#B4576A;      /* buttons and accents (white text passes contrast) */
+    --rose-2:#96455A;
+    --blush:#FBEFF1;     /* soft background */
+    --blush-2:#F5DDE2;
+    --gold:#C9A24A;
+    --muted:#6E5D63;
+    --line:#EBD3D9;
+    --serif:"Fraunces",Georgia,serif;
+    --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+    --r:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:62px}
+  img{display:block;width:100%;height:auto}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:13px 24px;border-radius:999px;background:var(--rose);color:#fff;font-weight:700;text-decoration:none;transition:background .2s,transform .15s}
+  .btn:hover{background:var(--rose-2)}
+  .btn:active{transform:scale(.98)}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .btn-ghost:hover{background:#fff}
+  .eyebrow{font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);font-weight:700}
+
+  /* Hero: editorial split, portrait in an arch */
+  .hero{background:var(--blush);overflow:hidden}
+  .hero .wrap{display:grid;gap:30px;padding-top:28px;padding-bottom:48px;align-items:center}
+  @media(min-width:860px){.hero .wrap{grid-template-columns:1.1fr .9fr;gap:56px;padding-top:56px;padding-bottom:72px}}
+  .brand{font-family:var(--serif);font-size:20px;font-weight:600;margin-bottom:28px;display:flex;align-items:center;gap:10px}
+  .brand i{width:34px;height:34px;border-radius:50%;background:var(--rose);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-style:normal;font-size:17px}
+  h1{font-family:var(--serif);font-weight:600;font-size:clamp(42px,11vw,76px);line-height:1;letter-spacing:-.01em;margin:10px 0 16px}
+  h1 span{color:var(--rose);font-style:italic}
+  .lead{font-size:17px;color:var(--muted);max-width:46ch}
+  .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .arch{position:relative;max-width:400px;margin:0 auto;width:100%}
+  .arch::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:220px 220px 26px 26px;border:2px solid var(--gold)}
+  .arch img{position:relative;border-radius:220px 220px 26px 26px;aspect-ratio:3/4;object-fit:cover;object-position:top;background:#fff}
+  .badge{position:absolute;left:-10px;bottom:28px;background:#fff;border-radius:16px;padding:12px 16px;box-shadow:0 14px 30px -14px rgba(31,26,28,.35);font-size:13.5px}
+  .badge b{display:block;font-family:var(--serif);font-size:22px;color:var(--rose);line-height:1.1}
+
+  section{padding:60px 0}
+  h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,7vw,44px);line-height:1.08;margin:6px 0 10px}
+  .sub{color:var(--muted);max-width:56ch}
+
+  /* Projects: numbered editorial rows, each with its own colour chip */
+  .projects{display:grid;gap:16px;margin-top:28px}
+  .proj{display:grid;grid-template-columns:1fr;text-decoration:none;color:inherit;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+  .proj:hover{transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(31,26,28,.45)}
+  @media(min-width:760px){.proj{grid-template-columns:.95fr 1.05fr}}
+  .proj img{aspect-ratio:16/10;object-fit:cover;height:100%}
+  .proj .b{padding:20px 22px;display:flex;flex-direction:column;gap:6px}
+  .num{font-family:var(--serif);font-size:15px;color:var(--gold);font-weight:600}
+  .proj h3{font-family:var(--serif);font-weight:600;font-size:clamp(25px,6vw,31px);line-height:1.1}
+  .where{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--muted)}
+  .where i{width:12px;height:12px;border-radius:50%}
+  .proj p{color:var(--muted);font-size:15px}
+  .go{margin-top:auto;padding-top:10px;font-weight:700;color:var(--rose);display:inline-flex;align-items:center;gap:8px;min-height:44px}
+  .go::after{content:"→";transition:transform .2s}
+  .proj:hover .go::after{transform:translateX(4px)}
+
+  /* How I help */
+  .help{background:var(--blush)}
+  .steps{display:grid;gap:14px;margin-top:24px;counter-reset:s}
+  @media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .steps div{background:#fff;border-radius:var(--r);padding:22px;border:1px solid var(--line);counter-increment:s}
+  .steps div::before{content:"0" counter(s);font-family:var(--serif);font-size:30px;color:var(--rose);display:block;line-height:1;margin-bottom:10px}
+  .steps h3{font-family:var(--serif);font-weight:600;font-size:21px;margin-bottom:4px}
+  .steps p{color:var(--muted);font-size:15px}
+
+  /* Contact */
+  .contact{background:var(--ink);color:#fff}
+  .contact h2{color:#fff}
+  .contact .sub{color:#D9C9CE}
+  .contact .eyebrow{color:#E9A9B6}
+  .ways{display:grid;gap:12px;margin-top:24px}
+  @media(min-width:760px){.ways{grid-template-columns:repeat(3,1fr)}}
+  .ways a{display:flex;flex-direction:column;gap:4px;padding:20px;border-radius:var(--r);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);text-decoration:none;color:#fff;transition:background .2s}
+  .ways a:hover{background:rgba(255,255,255,.12)}
+  .ways small{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#E9A9B6;font-weight:700}
+  .ways b{font-size:18px;word-break:break-word}
+
+  footer{background:#141012;color:#B8A6AC;font-size:12.5px;padding:26px 0;line-height:1.7}
+  .bar{position:fixed;left:0;right:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;background:#fff;border-top:1px solid var(--line);z-index:5}
+  .bar a{display:flex;align-items:center;justify-content:center;padding:15px 6px;font-weight:700;text-decoration:none;color:var(--ink)}
+  .bar a:last-child{background:var(--rose);color:#fff}
+  @media(min-width:860px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand"><i>D</i>Divine Ebol</div>
+      <div class="eyebrow">SMDC Manager</div>
+      <h1>Find your next <span>SMDC home</span> with Divine</h1>
+      <p class="lead">Hi, I'm Divine Lery Rose Ebol. I help families, OFWs and investors own SMDC condos, from the Bay and the airport in Metro Manila, to Las Piñas and Uptown Cagayan de Oro.</p>
+      <div class="ctas">
+        <a class="btn" href="#projects">See my projects</a>
+        <a class="btn btn-ghost" href="#contact">Talk to me</a>
+      </div>
+    </div>
+    <div class="arch">
+      <img src="images/divine-portrait.jpg" alt="Divine Lery Rose Ebol, SMDC Manager" width="780" height="1040" fetchpriority="high">
+      <div class="badge"><b>3 cities</b>Metro Manila · Las Piñas · CDO</div>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">My projects</div>
+    <h2>Where would you like to live?</h2>
+    <p class="sub">Tap a project to see its units, floor plans, amenities and payment options.</p>
+    <div class="projects">
+      <a class="proj" href="https://realestate.divineebol.com/">
+        <img src="images/card-bay.jpg" alt="Resort-style pools at Sail Residences, Mall of Asia Complex" width="1000" height="513" loading="lazy">
+        <div class="b">
+          <span class="num">01</span>
+          <h3>Gold · Sail · Shore 3</h3>
+          <span class="where"><i style="background:#0B2545"></i>Mall of Asia Complex and NAIA, Metro Manila</span>
+          <p>Three SMDC addresses by Manila Bay and right across NAIA Terminal 1.</p>
+          <span class="go">See the 3 projects</span>
+        </div>
+      </a>
+      <a class="proj" href="https://south2.divineebol.com/">
+        <img src="images/card-south2.jpg" alt="South 2 Residences towers beside SM Southmall, Las Piñas" width="1000" height="702" loading="lazy">
+        <div class="b">
+          <span class="num">02</span>
+          <h3>South 2 Residences</h3>
+          <span class="where"><i style="background:#C2570C"></i>SM Southmall, Las Piñas</span>
+          <p>1-bedroom and 2-bedroom condos with balcony, right inside the SM Southmall complex.</p>
+          <span class="go">See South 2</span>
+        </div>
+      </a>
+      <a class="proj" href="https://vail.divineebol.com/">
+        <img src="images/card-vail.jpg" alt="Vail Residences tower in Uptown Cagayan de Oro" width="1000" height="672" loading="lazy">
+        <div class="b">
+          <span class="num">03</span>
+          <h3>Vail Residences</h3>
+          <span class="where"><i style="background:#1B6FAE"></i>Uptown Cagayan de Oro</span>
+          <p>A garden community of studios and 1-bedroom condos, 700 m from SM City CDO Uptown.</p>
+          <span class="go">See Vail</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="help">
+  <div class="wrap">
+    <div class="eyebrow">How I help</div>
+    <h2>From your first question to your keys</h2>
+    <div class="steps">
+      <div><h3>Shortlist</h3><p>Tell me your budget and plans. I'll match you with the right project and unit.</p></div>
+      <div><h3>Compute</h3><p>I'll send today's price list and an official computation, so you decide with complete numbers.</p></div>
+      <div><h3>Reserve</h3><p>I'll walk you through the reservation and documents, even if you're abroad.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Talk to me</div>
+    <h2>Book a private presentation</h2>
+    <p class="sub">Online at your time zone, or in person at the showroom.</p>
+    <div class="ways">
+      <a href="https://m.me/smdc.eboldivine" target="_blank" rel="noopener"><small>Messenger</small><b>Message me</b></a>
+      <a href="tel:+639088911977"><small>Call or text</small><b>+63 908 8911 977</b></a>
+      <a href="mailto:divineebol.smdc@gmail.com"><small>Email</small><b>divineebol.smdc@gmail.com</b></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>This page is maintained by Divine Lery Rose Ebol, SMDC Manager. It is not the official website of SM Development Corporation. Prices, terms and availability are subject to change; your official quotation is final.</p>
+    <p>© <span id="y"></span> Divine Lery Rose Ebol</p>
+  </div>
+</footer>
+<nav class="bar" aria-label="Quick contact">
+  <a href="tel:+639088911977">Call</a>
+  <a href="https://m.me/smdc.eboldivine" target="_blank" rel="noopener">Messenger</a>
+</nav>
+<script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
